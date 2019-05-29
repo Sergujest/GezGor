@@ -1,0 +1,388 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+   body { background-image: url("public/sea4.jpg"); } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+
+</head>
+<body >
+      <!-- Navbar-->
+      <div lang="common" id="navbar">
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+          <a class="navbar-brand ">
+            <img src="public/Tlogo.jpg" width="50" height="50" class="d-inline-block " alt="">
+            <p class="text-danger my-0 mr-lg-3 d-inline-block">Gez-Gor</p>
+          </a>
+
+                <!--Menubar-->
+                <div lang="common" class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+
+                    <!--Home-->
+                    <div lang="en">
+                      <li class="nav-item active">
+                        <a class="nav-link mr-sm-2" lang="en" href="index.html">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                    </div>
+                    <div lang="tr">
+                      <li class="nav-item active">
+                        <a class="nav-link mr-sm-2" lang="tr" href="index.html">Anasayfa <span class="sr-only">(current)</span></a>
+                      </li>
+                    </div>
+
+                    <!--News-->
+                    <div lang="en">
+                      <li class="nav-item active">
+                        <a class="nav-link" lang="en" href="Todo.html">News</a>
+                      </li>
+                    </div>
+                    <div lang="tr">
+                      <li class="nav-item active">
+                        <a class="nav-link" lang="tr" href="Todo.html">Yeni</a>
+                      </li>
+                    </div>
+
+                    <!--Countries Navbar-->
+                    <div lang="en">
+                      <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Countries
+                        </a>
+                        <div lang="common" class="dropdown-menu bg-dark border-danger" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item text-danger" href="Todo.html">Turkey</a>
+                          <a class="dropdown-item text-danger" href="Todo.html">Germany</a>
+                          <a class="dropdown-item text-danger" href="Todo.html">Australia</a>
+                        </div>
+                      </li>
+                    </div>
+                    <div lang="tr">
+                      <li class="nav-item dropdown active" >
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Ülkeler
+                        </a>
+                        <div lang="common" class="dropdown-menu bg-dark border-danger" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item text-danger" href="Todo.html">Turkiye</a>
+                          <a class="dropdown-item text-danger" href="Todo.html">Almanya</a>
+                          <a class="dropdown-item text-danger" href="Todo.html">Avusturalya</a>
+                        </div>
+                      </li>
+                    </div>
+
+                    <!--Types Navbar-->
+                    <div lang="en">
+                      <li class="nav-item dropdown active" >
+                        <a class="nav-link dropdown-toggle" href="#" id="typeDropDownEn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Types
+                        </a>
+                        <div lang="common" class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item text-danger" href="Todo.html">Mountains</a>
+                          <a class="dropdown-item text-danger" href="Todo.html">Sea</a>
+                          <a class="dropdown-item text-danger" href="Todo.html">Desserts</a>
+                        </div>
+                      </li>
+                    </div>
+                    <div lang="tr">
+                      <li class="nav-item dropdown active" >
+                        <a class="nav-link dropdown-toggle" href="#" id="typeDropDownTr" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Tipler
+                        </a>
+                        <div lang="common" class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item text-danger" href="Todo.html">Dağlar</a>
+                          <a class="dropdown-item text-danger" href="Todo.html">Denizler</a>
+                          <a class="dropdown-item text-danger" href="Todo.html">Çöller</a>
+                        </div>
+                      </li>
+                    </div>
+                  
+
+                <!--Lenguage Selector Navbar-->
+                    <div lang="en">
+                      <li class="nav-item dropdown active id="enDiv1">
+                        <a class="nav-link dropdown-toggle text-white"  href="#" id="langDropDownEn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Lang
+                        </a>
+                        <div lang="common" class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                          <button class="dropdown-item text-danger" type="button">English</button>
+                          <button class="dropdown-item text-danger" id="changeLangTr" type="button">Turkish</button>
+                        </div>
+                      </li>
+                    </div>
+                    <div lang="tr">
+                      <li class="nav-item dropdown active mr-2" id="trDiv1">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="langDropDownTr" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dil
+                        </a>
+                        <div lang="common" class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                          <button class="dropdown-item text-danger" id="changeLangEn" type="button">English</button>
+                          <button class="dropdown-item text-danger" type="button">Turkish</button>
+                        </div>
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <!--log-in navbar-->
+                <div lang="en">
+                  <form class="form-inline">
+                    <button type="button" class="btn btn-white btn-outline-danger my-2 mr-sm-3" data-toggle="modal" data-target="#logInPop">Log-In</button>
+                  </form>
+                </div>
+
+                <div lang="tr">
+                  <form class="form-inline">
+                    <button type="button" class="btn btn-white btn-outline-danger my-2 mr-sm-3" lang="tr1" data-toggle="modal" data-target="#logInPop">Giriş</button>
+                  </form>
+                </div>
+              </nav>
+            </div>
+            
+            <!--log-in popup-->
+              <div lang="common" class="modal fade " id="logInPop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+                <div lang="common" class="modal-dialog modal-dialog-centered " role="document">
+                  <div lang="common" class="modal-content bg-secondary">
+                    <div lang="common" class="modal-header">
+                       <div lang="en">
+                        <h4 class="modal-title text-light" id="exampleModalLongTitle">Welcome!</h4>
+                      </div>
+                      <div lang="tr">
+                        <h4 class="modal-title text-light" id="exampleModalLongTitle">Hoşgeldiniz!</h4>
+                      </div>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                      <div lang="common" class="modal-body bg-white">
+                        <div lang="common" class="container">
+                          <div lang="common" class="row">
+
+                            <!--login popup-->
+                            <div lang="en" class="col-md border-right">
+                              <div lang="common" class="d-flex justify-content-center">
+                                <h5 class="text-danger"> Already Member</h5>
+                              </div>
+                              <form>
+                                <div lang="common" class="d-flex justify-content-center">
+                                  <div lang="common" class="form-group">
+                                    <input type="email" class="form-control mt-4 " id="logInEmailEn" aria-describedby="emailHelp" placeholder="widget@example">
+                                  </div>
+                                </div>
+                                <div lang="common" class="d-flex justify-content-center">
+                                  <div lang="common" class="form-group d-flex justify-content-center">
+                                    <input type="password" class="form-control " id="logInPasswordEn" placeholder="Password">
+                                  </div>
+                                </div>
+                                <div lang="common" class="d-flex justify-content-center">
+                                  <button type="submit" class="btn btn-danger m-3 justify-content-end">Log-In</button>
+                                </div>
+                              </form>
+                            </div>
+                            <div lang="tr" class="col-md border-right">
+                              <div lang="common" class="d-flex justify-content-center">
+                                <h5 class="text-danger"> Halihazırda Üyeyim</h5>
+                              </div>
+                              <form>
+                                <div lang="common" class="d-flex justify-content-center">
+                                  <div lang="common" class="form-group">
+                                    <input type="email" class="form-control mt-4 " id="logInEmailTr" aria-describedby="emailHelp" placeholder="widget@example">
+                                  </div>
+                                </div>
+                                <div lang="common" class="d-flex justify-content-center">
+                                  <div lang="common" class="form-group d-flex justify-content-center">
+                                    <input type="password" class="form-control " id="logInPasswordTr" placeholder="Şifre">
+                                  </div>
+                                </div>
+                                <div lang="common" class="d-flex justify-content-center">
+                                  <button type="submit" class="btn btn-danger m-3 justify-content-end">Giriş</button>
+                                </div>
+                              </form>
+                            </div>
+
+                            <!--sign-up popup-->
+                            <div lang="en" class="col-md">
+                              <div lang="common" class="d-flex justify-content-center">
+                                <h5 class="text-danger"> New to Gez-Gor? </h5>
+                              </div>
+                              <form>
+                                <div lang="common" class="d-flex justify-content-center">
+                                  <div lang="common" class="form-group ">
+                                    <input type="email" class="form-control mt-4 " id="signUpEmailEn" aria-describedby="emailHelp" placeholder="widget@example">
+                                  </div>
+                                </div>
+                                <div lang="common" class="d-flex justify-content-center">
+                                  <div lang="common" class="form-group row">
+                                    <input type="password" class="form-control col-form-label" id="signUpPasswordEn" placeholder="Password">
+                                  </div>
+                                </div>
+                                <div lang="common" class="d-flex justify-content-center">
+                                  <div lang="common" class="form-group row">
+                                    <input type="password" class="form-control col-form label" id="signUpPassword2En" placeholder="Confirm Password">
+                                  </div>
+                                </div>
+                                <div lang="common" class="d-flex justify-content-center">
+                                  <button type="submit" class="btn btn-danger m-3 justify-content-end">Sign-Up</button>
+                                </div>
+                              </form>
+                            </div>
+                            <div lang="tr" class="col-md">
+                              <div lang="common" class="d-flex justify-content-center">
+                                <h5 class="text-danger"> Gez-Gor'de Yeniyim </h5>
+                              </div>
+                              <form>
+                                <div lang="common" class="d-flex justify-content-center">
+                                  <div lang="common" class="form-group ">
+                                    <input type="email" class="form-control mt-4 " id="signUpEmailTr" aria-describedby="emailHelp" placeholder="widget@example">
+                                  </div>
+                                </div>
+                                <div lang="common" class="d-flex justify-content-center">
+                                  <div lang="common" class="form-group row">
+                                    <input type="password" class="form-control col-form-label" id="signUpPasswordTr" placeholder="Şifre">
+                                  </div>
+                                </div>
+                                <div lang="common" class="d-flex justify-content-center">
+                                  <div lang="common" class="form-group row">
+                                    <input type="password" class="form-control col-form label" id="signUpPassword2Tr" placeholder="Şifre Doğrulama">
+                                  </div>
+                                </div>
+                                <div lang="common" class="d-flex justify-content-center">
+                                  <button type="submit" class="btn btn-danger m-3 justify-content-end">Kaydol</button>
+                                </div>
+                              </form>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    <div lang="common" class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Slider-->
+              <div lang="common" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div lang="common" class="carousel-inner">
+                  <div lang="common" class="carousel-item active">
+                    <img class="d-block w-220" src="public/dağ.jpg" width="120%" height="500" alt="First slide">
+                  </div>
+                  <div lang="common" class="carousel-item ">
+                    <img class="d-block w-200" src="public/sea2.jpg" width="120%" height="500" alt="Second">
+                  </div>
+                  <div lang="common" class="carousel-item ">
+                    <img class="d-block w-200" src="public/desert.webp" width="120%" height="500" alt="Third">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            
+            <!--images-->
+            <div lang="common" class="container-fluid mt-2">
+              <div lang="common" class="row">
+                <div lang="common" class="col-md mt-1">
+                  <div lang="common" class="d-flex justify-content-center">
+                  <img class="d-block" src="public/kapadokya.jpg" height="600" width="98%">
+                </div>
+              </div>
+                 <div lang="common" class="col-md mt-1">
+                  <div lang="common" class="d-flex justify-content-center">
+                  <img class="d-block" src="public/beach.jpg" height="600" width="98%">
+                </div>
+              </div>
+                 <div lang="common" class="col-md mt-1">
+                  <div lang="common" class="d-flex justify-content-center">
+                  <img class="d-block" src="public/germany1.jpg" height="600" width="98%">
+                </div>
+              </div>
+              </div>
+            </div>
+
+              <!--Contact Us-->
+              <div lang="common" class="d-flex justify-content-center mt-3">
+                <div lang="common" class="card bg-dark " style="width: 46rem;">
+                  <div lang="en" class="card-body">
+                    <form>
+                      <div lang="common" class="row d-flex justify-content-center">
+                        <h3 class="mb-5 text-light">Contact Us</h3>
+                      </div>
+                      <div lang="common" class="form-group row w-100">
+                        <label for="emailInput2" class="text-light col-sm-2 col-form-label mx-auto">Email:</label>
+                        <div lang="common" class="col-sm-10">
+                          <input type="email" class="form-control ml-1 mr-5" id="emailInput2En" placeholder="@example.com">
+                        </div>
+                      </div>
+                      <div lang="common" class="form-group row w-100">
+                        <label for="subjectInput" class="text-light col-sm-2 col-form-label mx-auto">Subject:</label>
+                        <div lang="common" class="col-sm-10">
+                          <input type="email" class="form-control ml-1 mr-5" id="subjectInputEn" >
+                        </div>
+                      </div>
+                      <div lang="common" class="form-group row w-100">
+                        <label for="messageInput" class="text-light col-sm-2 col-form-label mx-auto">Message:</label>
+                        <div lang="common" class="col-sm-10">
+                          <textarea class="form-control ml-1" aria-label="With textarea"> </textarea> 
+                        </div>
+                      </div>
+                      <div lang="common" class="form-group row w-100 d-flex justify-content-center">
+                        <button type="submit" onclick="notificationEn()" class="ml-5 btn btn-dark btn-outline-danger m-3">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div lang="tr" class="card-body">
+                    <form>
+                      <div lang="common" class="row d-flex justify-content-center">
+                        <h3 class="mb-5 text-light">Bizimle İletişime Geç</h3>
+                      </div>
+                      <div lang="common" class="form-group row w-100">
+                        <label for="emailInput2" class="text-light col-sm-2 col-form-label mx-auto">Email:</label>
+                        <div lang="common" class="col-sm-10">
+                          <input type="email" class="form-control ml-1 mr-5" id="emailInput2Tr" placeholder="@example.com">
+                        </div>
+                      </div>
+                      <div lang="common" class="form-group row w-100">
+                        <label for="subjectInput" class="text-light col-sm-2 col-form-label mx-auto">Konu:</label>
+                        <div lang="common" class="col-sm-10">
+                          <input type="email" class="form-control ml-1 mr-5" id="subjectInputTr" >
+                        </div>
+                      </div>
+                      <div lang="common" class="form-group row w-100">
+                        <label for="messageInput" class="text-light col-sm-2 col-form-label mx-auto">Mesaj:</label>
+                        <div lang="common" class="col-sm-10">
+                          <textarea class="form-control ml-1" aria-label="With textarea"> </textarea> 
+                        </div>
+                      </div>
+                      <div lang="common" class="form-group row w-100 d-flex justify-content-center">
+                        <button type="submit" onclick="notificationTr()" class="ml-5 btn btn-dark btn-outline-danger m-3">Yükle</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+
+</body>
+</html>
